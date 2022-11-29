@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faire deviner un nombre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="image">
+        <img src="image/imagedefond.jpg" alt="imageDeFond">
+    </div>
+        <div id="container">
+                <header>
+                    <h1>
+                        DEVINER LE NOMBRE
+                    </h1>
+                </header>
+
+                <main>
+                    <ul>Règle du jeu :
+                        <li>Deviner un nombre en 1 et 100</li>
+                        <li>Vous aurez 10 tentatives maxi</li>
+                    </ul>
+                    <div id="game">
+                        <input type="text" id="registration" name="number" placeholder="Entrer votre chiffre">
+                        <input type="button" id="validate" name="button" value="valider">
+                    </div>
+                    <div>
+                        <input type="reset" id="newGame" value="New Game">
+                    </div>
+                    <div id="yourScore">
+                            <p><span id="lucky">10</span> chances restantes</p>
+                            <p id="numberPropose"> Nombre utilisé :</p>
+                            <p id="numberRetained"></p>
+                    </div>
+                    <div>
+                        <p id="result"></p>
+                    </div>
+                </main>
+        </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
